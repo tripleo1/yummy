@@ -6,6 +6,8 @@ a del.icio.us clone
 ```
 virtualenv venv
 source venv/bin/activate
+pip3 install -r requirements.txt
+pip3 install flask
 python3 main.py
 ```
 

@@ -35,8 +35,13 @@ def result():
         error=error)
 
 
+@app.route("/hello", methods=['GET', 'POST'])
+def hello_there2():
+    return hello_there(request.form.get("name"))
+
 @app.route("/hello/<name>")
 def hello_there(name):
+
     now = datetime.now()
     formatted_now = now.strftime("%A, %d %B, %Y at %X")
 

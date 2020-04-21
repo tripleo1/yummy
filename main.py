@@ -18,6 +18,10 @@ def index():
               {'name': 'Quebec'}])
 
 
+@app.route("/yummy")
+def yummy():
+	return render_template('yummy.html')
+	
 @app.route("/result", methods=['GET', 'POST'])
 def result():
     data = []

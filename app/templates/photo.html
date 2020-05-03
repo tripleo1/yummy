@@ -1,0 +1,12 @@
+        {% extends "layout.html" %}
+        {% block title %}
+        The Friggin Title
+        {% endblock %}
+        {% block content %}
+        <h5>Photo:</h5>
+	<form method="POST" action="/upload" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    <input type="submit" value="Go">
+</form>
+        {% endblock %}

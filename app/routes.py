@@ -40,6 +40,11 @@ def yummy():
     return render_template('yummy.html')
 
 
+@app.route("/photo")
+def photo():
+    return render_template('photo.html')
+
+
 @app.route("/result", methods=['GET', 'POST'])
 def result():
     data = []

@@ -12,3 +12,10 @@ python3 main.py
 ```
 
 Then go to http://localhost:5000
+
+
+## Inspiration
+
+![Root View](root.png)
+![Tag View](tag.png)
+![Tag Dialog](tag_dialog.png)
